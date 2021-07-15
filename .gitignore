@@ -1,6 +1,4 @@
 *.lnk
 build/
-Makefile
-make.bat
 .vscode
 .~lock.*#

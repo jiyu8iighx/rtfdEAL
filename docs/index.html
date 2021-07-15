@@ -1,0 +1,723 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.0.1.2 (Windows)"/>
+	<meta name="created" content="2017-10-20T23:41:04.964000000"/>
+	<meta name="changed" content="2021-07-15T15:22:43.054000000"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Microsoft YaHei"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+
+		table {border-width: 1px;border-color: #666666;border-collapse: collapse;}
+		table th {border-width: 1px;padding: 8px;border-style: solid;border-color: #666666;background-color: #dedede;}
+		table td {border-width: 1px;padding: 8px;border-style: solid;border-color: #666666;background-color: #ffffff;}
+	</style>
+	
+</head>
+
+<body>
+<hr>
+	<p><center>
+		<h1>概览</h1>
+		<A HREF="#table0">运算符</A><br>
+		<A HREF="#table1">元模板</A><br>
+		<A HREF="#table2">短普通</A><br>
+		<A HREF="#table3">长普通</A><br>
+		<A HREF="#table4">特殊符号</A><br>
+		
+	</center></p>
+<hr>
+<A NAME="table0"><h1>工作表 1: <em>运算符</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="254"></colgroup>
+	<colgroup width="211"></colgroup>
+	<colgroup span="2" width="107"></colgroup>
+	<colgroup width="152"></colgroup>
+	<colgroup width="360"></colgroup>
+	<colgroup width="397"></colgroup>
+	<tr>
+		<td height="24" align="left">语法类型</td>
+		<td align="left">结合方向</td>
+		<td align="left">优先级</td>
+		<td align="left">结合性</td>
+		<td align="left">符号/类型名</td>
+		<td align="left">定义</td>
+		<td align="left">备注</td>
+	</tr>
+	<tr>
+		<td height="24" align="left">符号式^2 &rarr; 符号式</td>
+		<td align="left">中缀</td>
+		<td align="right" sdval="300" sdnum="2052;"><font face="Liberation Sans">300</font></td>
+		<td align="left">左</td>
+		<td align="left">选项指定</td>
+		<td align="left">类型</td>
+		<td align="left">类型，用于连接表达式和它的选项值</td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 选项指定</td>
+		<td align="left">前缀</td>
+		<td align="right" sdval="720" sdnum="2052;"><font face="Liberation Sans">720</font></td>
+		<td align="left">无</td>
+		<td align="left"><font face="Liberation Sans">re</font></td>
+		<td align="left"><br></td>
+		<td align="left">助词，用于指定选项</td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 选项指定</td>
+		<td align="left">前缀</td>
+		<td align="right" sdval="720" sdnum="2052;"><font face="Liberation Sans">720</font></td>
+		<td align="left">无</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">助词，用于指定选项的同时返回该选项</td>
+	</tr>
+	<tr>
+		<td height="21" align="left">符号式 &rarr; 符号式</td>
+		<td align="left">后缀</td>
+		<td align="right" sdval="290" sdnum="2052;"><font face="Liberation Sans">290</font></td>
+		<td align="left">无</td>
+		<td align="left">选项返回标记</td>
+		<td align="left">类型</td>
+		<td align="left">类型，用于标记要返回的选项名</td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 选项返回标记</td>
+		<td align="left">前缀</td>
+		<td align="right" sdval="720" sdnum="2052;"><font face="Liberation Sans">720</font></td>
+		<td align="left">无</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">助词，用于返回略去的选项值</td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table1"><h1>工作表 2: <em>元模板</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="149"></colgroup>
+	<colgroup width="98"></colgroup>
+	<colgroup width="87"></colgroup>
+	<colgroup width="127"></colgroup>
+	<colgroup width="104"></colgroup>
+	<colgroup width="172"></colgroup>
+	<colgroup width="559"></colgroup>
+	<colgroup width="82"></colgroup>
+	<colgroup span="2" width="65"></colgroup>
+	<colgroup span="2" width="116"></colgroup>
+	<colgroup width="48"></colgroup>
+	<tr>
+		<td height="24" align="left">语法类型</td>
+		<td align="left">架构</td>
+		<td align="left">用途</td>
+		<td align="left">地位</td>
+		<td align="left">符号/类型名</td>
+		<td align="left">翻译</td>
+		<td align="left">定义</td>
+		<td align="left">结合方向</td>
+		<td align="left">优先级</td>
+		<td align="left">结合性</td>
+		<td align="left">输入默认标记</td>
+		<td align="left">输出默认标记</td>
+		<td align="left">备注</td>
+	</tr>
+	<tr>
+		<td height="21" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Logic</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">LI</font></td>
+		<td align="left" sdnum="2052;0;@">存在性</td>
+		<td align="left"><font face="Liberation Sans">LI: forall f (LI[KO[f]][x] &lt;=&gt; exist y f[y,x])</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Temporal</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">State</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">进行态</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Temporal</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">State</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">完成态</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Order</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">大小</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Order</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">OrdinalNumber</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">序数</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Operation</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">Result</font></td>
+		<td align="left"><br></td>
+		<td align="left">值</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Operation</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">Inverse</font></td>
+		<td align="left"><br></td>
+		<td align="left">右逆</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">GraphProperty</font></td>
+		<td align="left"><font face="Liberation Sans">ma</font></td>
+		<td align="left">析取结构</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">模板 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">GraphProperty</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">合取结构</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><font face="Liberation Sans">GraphProperty</font></td>
+		<td align="left"><br></td>
+		<td align="left">连通性</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">跟随输入</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">LA</font></td>
+		<td align="left" sdnum="2052;0;@">因果（使动/被动）</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">ta</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">假想（意动）</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">运算符 &rarr; 模板</td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">Meta</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">FO</font></td>
+		<td align="left" sdnum="2052;0;@">需求（应当）</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table2"><h1>工作表 3: <em>短普通</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="164"></colgroup>
+	<colgroup span="4" width="107"></colgroup>
+	<colgroup width="154"></colgroup>
+	<colgroup width="575"></colgroup>
+	<colgroup span="2" width="235"></colgroup>
+	<colgroup span="3" width="107"></colgroup>
+	<tr>
+		<td height="24" align="left">语法类型</td>
+		<td align="left">架构</td>
+		<td align="left">用途</td>
+		<td align="left">地位</td>
+		<td align="left">符号/类型名</td>
+		<td align="left">翻译</td>
+		<td align="left">定义</td>
+		<td align="left">结合方向</td>
+		<td align="left">优先级</td>
+		<td align="left">结合性</td>
+		<td align="left">输出默认标记</td>
+		<td align="left">备注</td>
+	</tr>
+	<tr>
+		<td height="24" align="left">符号式^n &rarr; 模板</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">短普通模板</td>
+		<td align="left"><br></td>
+		<td align="left">类型</td>
+		<td align="left">前缀</td>
+		<td align="right" sdval="620" sdnum="2052;"><font face="Liberation Sans">620</font></td>
+		<td align="left">左</td>
+		<td align="left">无限制</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Logic</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">SA</font></td>
+		<td align="left" sdnum="2052;0;BOOLEAN">真</td>
+		<td align="left">`1` 真</td>
+		<td align="left">继承自类型</td>
+		<td align="left">待定</td>
+		<td align="left">无</td>
+		<td align="left">待定</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Semantics</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">名为</td>
+		<td align="left"><font face="Liberation Sans">string `1` is the name of object `2`.</font></td>
+		<td align="left">继承自类型</td>
+		<td align="left">待定</td>
+		<td align="left">无</td>
+		<td align="left">待定</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">关系</td>
+		<td align="left">`1` 关系到 `2`</td>
+		<td align="left">&hellip;&hellip;</td>
+		<td align="left">&hellip;&hellip;</td>
+		<td align="left">&hellip;&hellip;</td>
+		<td align="left">&hellip;&hellip;</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Relation</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">FE</font></td>
+		<td align="left">映射</td>
+		<td align="left">`1` 映射为 `2`（单值的关系）</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Logic</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><font face="Liberation Sans">Implication</font></td>
+		<td align="left"><font face="Liberation Sans">HI</font></td>
+		<td align="left">蕴含</td>
+		<td align="left">`1` 蕴含 `2`</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Logic</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><font face="Liberation Sans">Operator</font></td>
+		<td align="left"><br></td>
+		<td align="left">逻辑与</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Dynamics</font></td>
+		<td align="left"><font face="Liberation Sans">Formal</font></td>
+		<td align="left"><font face="Liberation Sans">Causality</font></td>
+		<td align="left"><font face="Liberation Sans">KA</font></td>
+		<td align="left">导致</td>
+		<td align="left"><font face="Liberation Sans">`1` causes `2`.</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Reference</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">Predicate</font></td>
+		<td align="left"><font face="Liberation Sans">NA</font></td>
+		<td align="left"><font face="Liberation Sans">Reference</font></td>
+		<td align="left">`1` 是现实指示对象</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Reference</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">Predicate</font></td>
+		<td align="left"><font face="Liberation Sans">LE</font></td>
+		<td align="left"><font face="Liberation Sans">Context Reference</font></td>
+		<td align="left">`1` 是语境指示对象</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">QE</font></td>
+		<td align="left"><font face="Liberation Sans">What</font></td>
+		<td align="left">对 `1` 的语义/真值表示疑问</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">SE</font></td>
+		<td align="left"><font face="Liberation Sans">Please</font></td>
+		<td align="left">表明 `1` 是发信源的愿望</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">DI</font></td>
+		<td align="left">全局特称量化</td>
+		<td align="left">在语句的整个解释中， `1` 将被认为是特称量化的。</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><br></td>
+		<td align="left">局部特称量化</td>
+		<td align="left">`1` 被认为是特称量化的。</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><br></td>
+		<td align="left">全局全称量化</td>
+		<td align="left">在语句的整个解释中，`1` 将被认为是全称量化的。</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="24" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><font face="Liberation Sans">Quantifier</font></td>
+		<td align="left"><br></td>
+		<td align="left">局部全称量化</td>
+		<td align="left">`1` 被认为是全称量化的。</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Context</font></td>
+		<td align="left"><font face="Liberation Sans">Infomation</font></td>
+		<td align="left"><font face="Liberation Sans">Pointer</font></td>
+		<td align="left"><font face="Liberation Sans">MI</font></td>
+		<td align="left">我</td>
+		<td align="left">发信源</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">ko</font></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">短普通模板</td>
+		<td align="left"><font face="Liberation Sans">Context</font></td>
+		<td align="left"><font face="Liberation Sans">Infomation</font></td>
+		<td align="left"><font face="Liberation Sans">Pointer</font></td>
+		<td align="left"><font face="Liberation Sans">HE</font></td>
+		<td align="left">你</td>
+		<td align="left">收信者</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Liberation Sans">ko</font></td>
+		<td align="left"><br></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table3"><h1>工作表 4: <em>长普通</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="143"></colgroup>
+	<colgroup width="168"></colgroup>
+	<colgroup width="130"></colgroup>
+	<colgroup width="152"></colgroup>
+	<colgroup width="107"></colgroup>
+	<colgroup width="138"></colgroup>
+	<colgroup width="766"></colgroup>
+	<colgroup width="172"></colgroup>
+	<colgroup span="4" width="107"></colgroup>
+	<colgroup width="337"></colgroup>
+	<tr>
+		<td height="24" align="left">语法类型</td>
+		<td align="left">架构</td>
+		<td align="left">用途</td>
+		<td align="left">地位</td>
+		<td align="left">符号/类型名</td>
+		<td align="left">翻译</td>
+		<td align="left">定义</td>
+		<td align="left">选项名</td>
+		<td align="left">结合方向</td>
+		<td align="left">优先级</td>
+		<td align="left">结合性</td>
+		<td align="left">输出默认标记</td>
+		<td align="left">备注</td>
+	</tr>
+	<tr>
+		<td height="24" align="left">符号式^n &rarr; 模板</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">长普通模板</td>
+		<td align="left"><br></td>
+		<td align="left">类型</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left">长普通模板</td>
+		<td align="left"><font face="Liberation Sans">Structure</font></td>
+		<td align="left"><font face="Liberation Sans">PlainStructure</font></td>
+		<td align="left"><font face="Liberation Sans">Order</font></td>
+		<td align="left"><br></td>
+		<td align="left">列表的序</td>
+		<td align="left"><font face="Liberation Sans">relation `1` is the order on list `2`, from collection `source`</font></td>
+		<td align="left"><font face="Liberation Sans">source</font></td>
+		<td align="left">中缀</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">大部分词尚不成系统，等完善一些再列写。</td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table4"><h1>工作表 5: <em>特殊符号</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="107"></colgroup>
+	<colgroup width="125"></colgroup>
+	<colgroup width="146"></colgroup>
+	<colgroup width="273"></colgroup>
+	<tr>
+		<td height="21" align="left">特殊字符符号</td>
+		<td align="left">词符号</td>
+		<td align="left">发音</td>
+		<td align="left">用途</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">&amp;</font></td>
+		<td align="left">无</td>
+		<td align="left"><br></td>
+		<td align="left">交复合</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">/</font></td>
+		<td align="left">无</td>
+		<td align="left"><br></td>
+		<td align="left">差复合</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">`</font></td>
+		<td align="left">无</td>
+		<td align="left"><br></td>
+		<td align="left">命名空间指定</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">_</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">显式变量</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">:</font></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left">显式变量句</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">[</font></td>
+		<td align="left"><font face="Liberation Sans">lo</font></td>
+		<td align="left"><br></td>
+		<td align="left">左括号</td>
+	</tr>
+	<tr>
+		<td height="21" align="left"><font face="Liberation Sans">]</font></td>
+		<td align="left"><font face="Liberation Sans">zi</font></td>
+		<td align="left"><br></td>
+		<td align="left">右括号</td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
