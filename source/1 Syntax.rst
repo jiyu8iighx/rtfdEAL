@@ -273,8 +273,10 @@ EAL规定，符号式 ``Friend[a, b]`` 应序列化为
 
 根据目前的架构制作的示例词汇表：
 
+* `HTML在线版本 <https://jiyu8iighx.github.io/rtfdEAL/>`_
 * `ODS版本 <https://github.com/jiyu8iighx/rtfdEAL/blob/main/source/assets/SampleWordList.ods>`_
-* `HTML版本 <https://github.com/jiyu8iighx/rtfdEAL/blob/main/source/assets/SampleWordList.html>`_
+* `XLSX版本 <https://github.com/jiyu8iighx/rtfdEAL/blob/main/source/assets/SampleWordList.xlsx>`_
+
 
 ^^^^^^^^^^^^^^^^^^^^
 发音
