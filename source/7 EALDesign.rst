@@ -14,6 +14,7 @@
 什么是语言
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 这个问题语言学和哲学讨论的很多了。这里主要提三种（不完全互斥的）观点：
+
 * 语言是一套记号约定，用于表示感知及其形成的认知。
 	* `摹状词 <https://plato.stanford.edu/entries/descriptions/>`_ 
 	* `指称 <https://plato.stanford.edu/entries/reference/>`_ 
